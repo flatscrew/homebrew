@@ -1,8 +1,8 @@
 class Rasterflow < Formula
   desc "RasterFlow"
   homepage "https://github.com/flatscrew/rasterflow"
-  url "https://github.com/flatscrew/rasterflow/archive/refs/tags/v0.1.1.tar.gz"
-  sha256 "c9d3ab6c87df1e75eb0acc44118f37ea45a1833b853aace26413fab22d06a35a"
+  url "https://github.com/flatscrew/rasterflow/archive/refs/tags/v0.1.2.tar.gz"
+  sha256 "1227642504f86e335e734cabf3ce0cea3d724c06c1c69f30fad63ed6358516f2"
   license "GPL-3.0"
 
   depends_on "meson" => :build
@@ -27,6 +27,10 @@ class Rasterflow < Formula
     system "meson", "setup", "build", *std_meson_args
     system "meson", "compile", "-C", "build"
     system "meson", "install", "-C", "build"
+  end
+  
+  def post_install
+    system "#{Formula["glib"].opt_bin}/glib-compile-schemas", "#{share}/glib-2.0/schemas"
   end
 
   test do
