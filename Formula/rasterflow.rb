@@ -15,11 +15,11 @@ class Rasterflow < Formula
   depends_on "gobject-introspection"
   depends_on "gtk4"
   depends_on "json-glib"
-  depends_on "libadwaita"
-
+  
   depends_on "flatscrew/osx/libgflow"
   depends_on "flatscrew/osx/libgtkflow4"
   
+  depends_on "libadwaita"
   depends_on "libgee"
 
   def install
