@@ -11,15 +11,6 @@ class GeglWithPixbuf < Formula
       regex(/href=.*?gegl[._-]v?(\d+(?:\.\d+)+)\.t/i)
     end
   
-    bottle do
-      sha256 arm64_tahoe:   "e6a1c4f04695d04e054e373c265f25ddfe9459a6aa90dd8097895fdc42dc2d28"
-      sha256 arm64_sequoia: "9abe8b3082760302923afe041d8792c98977d6a77d41da71e56ed6d24caa27b4"
-      sha256 arm64_sonoma:  "c6ed3ae6ba605d7f0afc00b34c7d727bd712b2773df4b15d92f8715248752974"
-      sha256 sonoma:        "84a7cc23067200f0b215251d6fcc01456529956604503054a194deaeafe69a67"
-      sha256 arm64_linux:   "c3ea7978107c67b085bbb4e64b7116ea4e6d3cf1ae489c1fb2bfe63bf273916b"
-      sha256 x86_64_linux:  "c0585d66c3447d9c1e3aa3cb8e6dec27cf41799722068dfa0379bf3a8450597a"
-    end
-  
     depends_on "gettext" => :build
     depends_on "gobject-introspection" => :build
     depends_on "meson" => :build
