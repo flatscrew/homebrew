@@ -1,4 +1,4 @@
-class Gegl < Formula
+class GeglWithPixbuf < Formula
     desc "Graph based image processing framework"
     homepage "https://www.gegl.org/"
     url "https://download.gimp.org/pub/gegl/0.4/gegl-0.4.64.tar.xz"
