@@ -1,8 +1,8 @@
 class Rasterflow < Formula
   desc "Node-based raster editor built on GTK4"
   homepage "https://github.com/flatscrew/rasterflow"
-  url "https://github.com/flatscrew/rasterflow/archive/refs/tags/v0.1.4.tar.gz"
-  sha256 "564b3fa82c425edd01dd09f583c75773bf0b9dee471eb8337c910ee7c818f7cc"
+  url "https://github.com/flatscrew/rasterflow/archive/refs/tags/v0.1.5.tar.gz"
+  sha256 "540773ebcfe2edd7d7b3fbc6263ab48e7288537eeafafaf155a92cd4c8b25b31"
   license "GPL-3.0"
 
   depends_on "meson" => :build
